@@ -1,0 +1,80 @@
+:root {
+  --black: #1d1d1f;
+  --white: #fcfcfc;
+  --grey: #43424b;
+
+  --bottom: #1dc1f2;
+  --bottom-text: #05dbf2;
+  --middle: #f2059f;
+  --top: #f2bd1d;
+  --top-text: #f29f05;
+  --roof-color: #4ad988;
+
+  --navbg: #171718cc;
+  --shadow: #00000033;
+
+  --font-size-l: 24px;
+  --font-size-m: 1em;
+  --font-size-s: 0.75em;
+  --font-size-xl: 2.25em;
+  --font-size-xxl: 3.375em;
+  --font-size-xxxl: 5em;
+
+  --shadow-color: 240deg 6% 3%;
+  --shadow-elevation-low: 0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.34),
+    0.2px 0.3px 0.4px -1.2px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.7px 0.9px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.36),
+    0.3px 0.6px 0.8px -0.8px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.4px 1.8px -1.7px hsl(var(--shadow-color) / 0.36),
+    2px 3.5px 4.5px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0.1px 0.2px 0.3px hsl(var(--shadow-color) / 0.34),
+    0.6px 1px 1.3px -0.4px hsl(var(--shadow-color) / 0.34),
+    1.1px 1.9px 2.5px -0.7px hsl(var(--shadow-color) / 0.34),
+    1.8px 3.1px 4px -1.1px hsl(var(--shadow-color) / 0.34),
+    2.8px 5px 6.4px -1.4px hsl(var(--shadow-color) / 0.34),
+    4.4px 7.8px 10.1px -1.8px hsl(var(--shadow-color) / 0.34),
+    6.7px 11.8px 15.3px -2.1px hsl(var(--shadow-color) / 0.34),
+    9.8px 17.4px 22.5px -2.5px hsl(var(--shadow-color) / 0.34);
+
+  --font-family: "Consolas", "Fira Code", "Inconsolata", "Monaco",
+    "Lucida Console";
+}
+
+p,
+h5 {
+  font-size: var(--font-size-m);
+  text-shadow: var(--shadow-elevation-medium);
+}
+
+h1 {
+  font-size: var(--font-size-xxxl);
+  line-height: 1em;
+  margin-bottom: 0.5em;
+  text-shadow: var(--shadow-elevation-high);
+}
+
+h2 {
+  font-size: var(--font-size-xxl);
+  margin-bottom: 0.5em;
+  text-shadow: var(--shadow-elevation-high);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: 1.5em;
+  text-shadow: var(--shadow-elevation-high);
+}
+
+h4 {
+  font-size: var(--font-size-l);
+  margin: 5px 0px;
+  text-shadow: var(--shadow-elevation-medium);
+}
+
+h6 {
+  font-size: var(--font-size-s);
+  letter-spacing: 0;
+  margin: 5px 0px;
+  text-shadow: var(--shadow-elevation-low);
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Levels 101</title>
+    <link type="text/css" href="css/globals.css" rel="stylesheet" />
+    <link type="text/css" href="css/styleguide.css" rel="stylesheet" />
+    <link type="text/css" href="css/levels101.css" rel="stylesheet" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+
+  <body>
+    <nav flex="">
+      <a href="https://theripper93.com">
+        <box-icon id="home" name="home" type="solid" color="white" size="md">
+        </box-icon>
+      </a>
+      <div class="central"></div>
+      <div class="end">
+        <a href="https://www.patreon.com/theripper93"
+          ><box-icon
+            id="patreon"
+            name="patreon"
+            type="logo"
+            color="white"
+            size="md"
+          >
+          </box-icon></a
+        ><a href="https://discord.gg/F53gBjR97G"
+          ><box-icon
+            id="discord"
+            name="discord-alt"
+            type="logo"
+            color="var(--white)"
+            size="md"
+          ></box-icon
+        ></a>
+      </div>
+    </nav>
+    <div class="splash">
+    <h1>Levels 101</h1>
+      <h3>
+        This is a page for explaining basic levels concepts and answer
+        frequently asked questions <br /><br />Levels is commonly
+        misunderstood—but there is no shame in that! <br /><br />
+        It is difficult for a first time user to grasp and there’s always more
+        to learn for seasoned user too<br /><br />
+        Below you will see a few graphics and descriptions to help you visualize
+        the foundational concepts in levels
+      </h3>
+    </div>
+    <div class="main">
+      <div class="container-center">
+       <img src="../img/floating-asset-2.svg" alt="floating wireframe donut" style="
+            position: absolute;
+            right: 10rem;
+            height: 25vh;
+            width: 10vw;
+            transform: translateY(75rem);
+            z-index: -3; 
+       ">
+        <img src="../img/floating-asset-1.svg" alt="floating cylinder" style="
+            position: absolute;
+            left: 5rem;
+            height: 25vh;
+            width: 10vw;
+            transform: translateY(125rem);
+            z-index: -3; 
+         ">
+     <div class="segment" id="basics">
+          <div class="information">
+            <h2>Basics</h2>
+            <h5>An Introduction</h5>
+            <br />
+            <p>
+              Levels uses height values. The values consist of a bottom value
+              and a top value, representing the lowest and highest height an
+              actor, tile, wall, etc. occupy.<br /><br />
+              For this page, we will be using a theoretical set of 3 tiles. They
+              will be represented by coloured squares. The graphics are to
+              visualize their relationships with each other based on their
+              height values.<br /><br />The lowest layer will have
+              <span class="low-text">0</span> as its lowest height and
+              <span class="high-text">9</span> as its highest height. It is
+              represented by <span class="blue">[blue]</span
+              ><span class="span paragraph"
+                >.<br /><br />The medium layer will have </span
+              ><span class="low-text">10</span
+              ><span class="span paragraph"> as its lowest height and </span
+              ><span class="high-text">19</span
+              ><span class="span paragraph">
+                as its highest height. It is represented by </span
+              ><span class="red">[red]</span
+              ><span class="span paragraph"
+                >.<br /><br />The highest layer will have </span
+              ><span class="low-text">20</span
+              ><span class="span paragraph"> as its lowest height and </span
+              ><span class="high-text">29</span
+              ><span class="span paragraph">
+                as its highest height. It is represented by </span
+              ><span class="yellow">[yellow]</span
+              ><span class="span paragraph">.<br /></span
+              ><span class="yellow"></span>
+            </p>
+          </div>
+          <div class="heightlabels">
+            <div class="top">
+              <h4>
+                <span class="yellow">20</span
+                ><span class="span paragraph">/</span
+                ><span class="yellow">29</span><br />
+              </h4>
+              <h6>
+                <span class="yellow">Bottom</span
+                ><span class="span paragraph">/</span
+                ><span class="yellow">Top</span>
+              </h6>
+            </div>
+            <div class="middle">
+              <h4>
+                <span class="red">19</span><span class="span paragraph">/</span
+                ><span class="red">10</span>
+                <br />
+              </h4>
+              <h6>
+                <span class="red">Bottom</span
+                ><span class="span paragraph">/</span
+                ><span class="red">Top</span>
+              </h6>
+            </div>
+            <div class="bottom">
+              <h4>
+                <span class="blue">19</span><span class="span paragraph">/</span
+                ><span class="blue">10</span>
+                <br />
+              </h4>
+              <h6>
+                <span class="blue">Bottom</span
+                ><span class="span paragraph">/</span
+                ><span class="blue">Top</span>
+              </h6>
+            </div>
+          </div>
+          <div class="isometric">
+            <div class="secondary-title">
+              <h2>Isometric</h2>
+              <h5>The 3/4ths view</h5>
+            </div>
+            <div class="isometric-wrapper">
+              <div class="expanded">
+                <div class="square" id="expanded-top"></div>
+                <div class="square" id="expanded-middle"></div>
+                <div class="square" id="expanded-bottom"></div>
+              </div>
+              <div class="collapsed">
+                <div class="square" id="collapsed-top"></div>
+                <div class="square" id="collapsed-middle"></div>
+                <div class="square" id="collapsed-bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="topdown">
+            <div class="secondary-title">
+              <h2>Top-down</h2>
+              <h5>Cross section</h5>
+            </div>
+            <div class="square-td">
+              <div class="square" id="td-top"></div>
+              <div class="square" id="td-middle"></div>
+              <div class="square" id="td-bottom"></div>
+            </div>
+          </div>
+          <div class="sideview">
+            <div class="secondary-title">
+              <h2>Side View</h2>
+              <h5>Flat on the sides</h5>
+            </div>
+            <div class="rectangle" id="sv-top"></div>
+            <div class="rectangle" id="sv-middle"></div>
+            <div class="rectangle" id="sv-bottom"></div>
+          </div>
+        </div>
+        <div class="segment" id="stairs">
+          <div class="information">
+            <h2>Stairs</h2>
+            <p>Stairs allow a token to travel between elevations.</p>
+            <ul>
+              <li>Stairs can only move tokens to its set elevations</li>
+              <li>
+                The token must be on one of the two elevations exactly (e.g.
+                <span class="low-text">0</span> or
+                <span class="high-text">9</span>) to trigger
+              </li>
+              <li>
+                Stairs will move tokens one value higher than its top elevation
+                if entering from below
+              </li>
+            </ul>
+            <p>
+              To better understand this, we will have a stair with the values of
+              <span class="low-text">0</span> and
+              <span class="high-text">9</span>. The solid lines represent the
+              stair’s height values and the dashed line represents Property #3
+              above.
+            </p>
+          </div>
+          <div class="example" name="stairs">
+            <h4>Stair</h4>
+            <div class="solid-border"></div>
+            <div class="bottom">
+              <h4>0/9</h4>
+              <h6>Bottom/Top</h6>
+            </div>
+          </div>
+          <div class="isometric">
+            <div class="secondary-title">
+              <h2>Isometric</h2>
+              <h5>The 3/4ths view</h5>
+            </div>
+            <div class="isometric-wrapper">
+              <div class="expanded">
+                <img
+                  src="img/stairs-cube-defeat.svg"
+                  alt=""
+                  id="expanded-stairs"
+                />
+              </div>
+              <div class="collapsed">
+                <img
+                  src="img/stairs-cube-co.svg"
+                  alt=""
+                  id="collapsed-stairs"
+                />
+                <div class="square" id="collapsed-top"></div>
+                <div class="square" id="collapsed-middle"></div>
+                <div class="square" id="collapsed-bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="topdown">
+            <div class="secondary-title">
+              <h2>Top-down</h2>
+              <h5>Cross section</h5>
+            </div>
+            <div class="square-td">
+              <div class="square" id="td-top"></div>
+              <img src="img/td-stairs-pink.png" alt="" id="td-stairs-pink" />
+              <img src="img/td-stairs-blue.png" alt="" id="td-stairs-blue" />
+            </div>
+          </div>
+          <div class="sideview">
+            <div class="secondary-title">
+              <h2>Side View</h2>
+              <h5>Flat on the sides</h5>
+            </div>
+            <img src="img/sv-stairs.svg" alt="" id="sv-stairs" />
+          </div>
+        </div>
+        <div class="segment" id="holes">
+          <div class="information">
+            <h2>Holes</h2>
+            <p> A Hole will cut through the 3D space to allow vision to pass
+              through tile polygons</p>
+            <ul>
+              <li>
+                Holes <span class="red">do not</span> allow tokens to fall
+                through—They are used for vision, not for movement.
+              </li>
+              <li>
+                Holes <span class="red">do not</span> add transparency to the
+                images in your tiles. You will not be able to see through them
+                if there is not transparency in the area of the image the hole
+                is over.
+              </li>
+            </ul>
+            <p>While setting up a hole, the best way to figure out the top and bottom values is to imagine standing inside the hole, look up, look down—the elevations your eyes would hit are the top and
+             bottom values you need</p>
+          </div>
+          <div class="example" name="holes">
+            <h4>Hole</h4>
+            <div class="dashed-border"></div>
+            <div class="bottom">
+              <h4>0/9</h4>
+              <h6>Bottom/Top</h6>
+            </div>
+          </div>
+          <div class="isometric">
+            <div class="secondary-title">
+              <h2>Isometric</h2>
+              <h5>The 3/4ths view</h5>
+            </div>
+            <div class="isometric-wrapper">
+              <div class="collapsed">
+                <div class="square-hollow" id="top-hollow-co"></div>
+                <div class="square-hollow" id="middle-hollow-co"></div>
+                <div class="square-hollow" id="bottom-hollow-co"></div>
+              </div>
+              <div class="expanded">
+                <div class="square-hollow" id="top-hollow"></div>
+                <div class="square-hollow" id="middle-hollow"></div>
+                <div class="square-hollow" id="bottom-hollow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="topdown">
+            <div class="secondary-title">
+              <h2>Top-down</h2>
+              <h5>Cross section</h5>
+            </div>
+            <div class="square-td">
+              <div class="square-hollow" id="td-top-hollow"></div>
+              <div class="square-hollow" id="td-middle-hollow"></div>
+              <div class="square-hollow" id="td-bottom-hollow"></div>
+            </div>
+          </div>
+          <div class="sideview">
+            <div class="secondary-title">
+              <h2>Side View</h2>
+              <h5>Flat on the sides</h5>
+            </div>
+            <div class="hollow-rectangle-wrapper">
+              <img src="../img/hollow-yellow-rect.svg" alt />
+              <img src="../img/hollow-red-rect.svg" alt />
+              <img src="../img/hollow-blue-rect.svg" alt />
+            </div>
+          </div>
+        </div>
+        <div class="segment" id="roofs">
+          <div class="information">
+            <h2>Roofs</h2>
+            <p>
+              A roof is a tile intended to be the top of the building.
+              <br /><br />
+
+              Under most roof settings, a roof is visible from afar but not visible while below it. There are many settings that allow a roof to be visible through fog, at a greater distance, or partially visible while underneath. <br /><br />
+
+              Roofs have many settings and opportunities to do unique things with. However, because there are many potential uses for roofs, roofs tend to cause quite a bit of confusion for people. This will only be a basic visual representation of roofs but a more in-depth page may be coming soon. <br /><br />
+
+              The values for a roof should be:<br /><br />
+
+              <span class="low-text">Bottom</span>: The highest layer + 1<br />
+              <span class="high-text">Top</span>: Infinity
+            </p>
+          </div>
+          <div class="heightlabels" name="roofs">
+            <div class="roof-text">
+              <h4>
+                <span class="roof-color">30</span
+                ><span class="span paragraph">/</span
+                ><span class="roof-color" style="font-size: 1.75rem">∞</span
+                ><br />
+              </h4>
+              <h6>
+                <span class="roof-color">Bottom</span
+                ><span class="span paragraph">/</span
+                ><span class="roof-color">Top</span>
+              </h6>
+            </div>
+            <div class="top">
+              <h4>
+                <span class="yellow">20</span
+                ><span class="span paragraph">/</span
+                ><span class="yellow">29</span><br />
+              </h4>
+              <h6>
+                <span class="yellow">Bottom</span
+                ><span class="span paragraph">/</span
+                ><span class="yellow">Top</span>
+              </h6>
+            </div>
+            <div class="middle">
+              <h4>
+                <span class="red">19</span><span class="span paragraph">/</span
+                ><span class="red">10</span>
+                <br />
+              </h4>
+              <h6>
+                <span class="red">Bottom</span
+                ><span class="span paragraph">/</span
+                ><span class="red">Top</span>
+              </h6>
+            </div>
+            <div class="bottom">
+              <h4>
+                <span class="blue">19</span><span class="span paragraph">/</span
+                ><span class="blue">10</span>
+                <br />
+              </h4>
+              <h6>
+                <span class="blue">Bottom</span
+                ><span class="span paragraph">/</span
+                ><span class="blue">Top</span>
+              </h6>
+            </div>
+          </div>
+          <div class="isometric">
+            <div class="secondary-title">
+              <h2>Isometric</h2>
+              <h5>The 3/4ths view</h5>
+            </div>
+            <div class="isometric-wrapper">
+              <div class="expanded" name="iso-roofs">
+                <img
+                  src="../img/roof-2.svg"
+                  alt
+                  style="height: 150px; width: 150px"
+                />
+                <div class="square" id="expanded-top"></div>
+                <div class="square" id="expanded-middle"></div>
+                <div class="square" id="expanded-bottom"></div>
+              </div>
+              <div class="collapsed" id="roofs-collapsed">
+                <img id="collapsed-roof" src="../img/roof-1.svg" alt />
+                <div class="square" id="collapsed-top"></div>
+                <div class="square" id="collapsed-middle"></div>
+                <div class="square" id="collapsed-bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="topdown">
+            <div class="secondary-title">
+              <h2>Top-down</h2>
+              <h5>Cross section</h5>
+            </div>
+            <div class="square-td">
+              <div class="square" id="td-roof"></div>
+              <div class="square" id="td-top"></div>
+              <div class="square" id="td-middle"></div>
+              <div class="square" id="td-bottom"></div>
+            </div>
+          </div>
+          <div class="sideview">
+            <div class="secondary-title">
+              <h2>Side View</h2>
+              <h5>Flat on the sides</h5>
+            </div>
+            <div class="rectangle" id="sv-roof"></div>
+            <div class="rectangle" id="sv-top"></div>
+            <div class="rectangle" id="sv-middle"></div>
+            <div class="rectangle" id="sv-bottom"></div>
+          </div>
+        </div>
+        <div class="segment" id="extra">
+          <div class="extra">
+            <div class="information">
+              <h2>Notes</h2>
+              <ul>
+                <li>Each tile should represent only one range of elevations</li>
+              </ul>
+                <p>For example: A tile that has both parts of a floor and a roof piece should be split into two tiles to avoid issues </p>
+                <ul>
+                <li>
+                  The advanced mode is under the Better Roofs module settings
+                </li>
+                </ul>
+                <p>
+                  Please have this enabled when asking for help or
+                  troubleshooting
+                </p>
+                <br /><br />
+              </ul>
+              <img
+                src="https://media.discordapp.net/attachments/913596560779128903/925556978237993020/unknown.png?width=1227&height=917"
+                alt="Screenshot of settings location. It is under settings, then module settings, then Better Roofs. You will see a checkbox for 'Advanced Settings'."
+                style="width:611px;height:450px;"
+              />
+            </div>
+            <div class="baileywiki">
+              <h2>Additional Info</h2>
+              <p>
+                Baileywiki has excellent videos breaking down Levels concepts in
+                greater depth:
+              </p>
+              <br />
+              <iframe
+                src="https://www.youtube.com/watch?v=NCg6T7lMrRs"
+                frameborder="0"
+                width="654"
+                height="390"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="epilogue">
+      <h1>Still Confused?</h1>
+      <h3>
+        Ask away in the
+        <a id="discordlink" href="https://discord.gg/F53gBjR97G">
+          official discord</a
+        >.
+      </h3>
+      <h3>(Read the pins first!)</h3>
+    </div>
+  </body>
+</html>
