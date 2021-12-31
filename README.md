@@ -8,9 +8,9 @@ There's a few things I feel like I could've done better in terms of visual hiera
 
 
 # Screenshots
-![image](https://user-images.githubusercontent.com/95392008/147806209-ae3fb531-7f00-49d2-9fd5-0eac7353bbb5.png)
-![image](https://user-images.githubusercontent.com/95392008/147821016-ff84a6b4-0c55-4419-b5e5-6b582e3831ba.png)
-![image](https://user-images.githubusercontent.com/95392008/147806216-9feedd28-1e30-4710-b94d-550998e9a0bd.png)
+![image](https://user-images.githubusercontent.com/95392008/147821396-2d15069a-709f-49e3-9ebb-3678e1c3cc5a.png)
+![image](https://user-images.githubusercontent.com/95392008/147821403-7a31877c-3a5b-45e1-8fe5-ef79d15b8db1.png)
+![image](https://user-images.githubusercontent.com/95392008/147821415-6284bae0-262d-4945-a4c3-337dca94e740.png)
 
 # Infographic 
 ![image](https://user-images.githubusercontent.com/95392008/147805983-f4f8fd47-6476-44f8-a760-4f6bce3fb5e1.png)
