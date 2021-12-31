@@ -1,7 +1,8 @@
 # Levels 101
-Concept: Explain the Foundry VTT Levels module with visual aids.
+**Concept**: Explain the Foundry VTT Levels module with visual aids.
 
-It started as an infographic but I decided to try my hand at converting it to a site. Both are me trying to develop graphic design + front-end skills.
+Side project for learning graphic design + CSS/HTML. It started as just the infographic but decided to give converting it to a page as a shot.
+
 There's a few things I feel like I could've done better in terms of visual hierarchy, organization, and generally the code itself, but I feel like I learned quite a bit from it. 
 
 
