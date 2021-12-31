@@ -16,4 +16,6 @@ There's a few things I feel like I could've done better in terms of visual hiera
 ![image](https://user-images.githubusercontent.com/95392008/147805983-f4f8fd47-6476-44f8-a760-4f6bce3fb5e1.png)
 
 # Credits
-The images I used for the backdrops etc. were licenced and paid for via Envato Elements. I will not be uploading the assets I do not own or did not create myself. 
+The images I used for the backdrops etc. were licenced and paid for via Envato Elements. Icons courtesy of BoxIcons. 
+
+I will not be uploading the assets I do not own or did not create myself. 
