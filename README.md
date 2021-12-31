@@ -1,9 +1,8 @@
 # Levels 101
-A page I made to practice HTML + CSS 
+A page I made to practice HTML + CSS. It started as an infographic but I decided to try my hand at converting it to a site.
 
-Concept was: Explain the Foundry VTT Levels module with visual aids
+Concept: Explain the Foundry VTT Levels module with visual aids
 
-It started as an infographic but I decided to try my hand at converting it to a site
 
 # Screenshots
 ![image](https://user-images.githubusercontent.com/95392008/147806209-ae3fb531-7f00-49d2-9fd5-0eac7353bbb5.png)
