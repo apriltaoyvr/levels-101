@@ -72,19 +72,6 @@ nav .end {
   flex-grow: 0;
 }
 
-ol,
-ul {
-  list-style: inside;
-  padding: 1em;
-  text-shadow: var(--shadow-elevation-low);
-}
-
-li {
-  list-style: square;
-  padding: 0.25em;
-  text-shadow: var(--shadow-elevation-low);
-}
-
 box-icon {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin: 0.5rem;

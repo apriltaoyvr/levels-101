@@ -61,7 +61,7 @@
 
 /* Big Fat Pages (Splash Pages) */
 /* Intro */
-.splash {
+heading {
   background-image: url(../img/JD2.svg);
   background-attachment: fixed;
   background-position: center;
@@ -76,16 +76,17 @@
   position: relative;
 
   min-height: 80vh;
-  padding-bottom: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
 }
 
-.splash h3 {
+heading h3 {
   text-align: justify;
-  max-width: 50vw;
+  max-width: 60vw;
 }
 
 /* Epilogue */
-.epilogue {
+footer {
   align-items: center;
   justify-content: center;
   background-image: url(../img/JD1.svg);
@@ -95,7 +96,8 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding: 45vh 20vw;
+  
+  height: 100vh;
 }
 
 a#discordlink {
@@ -106,7 +108,7 @@ a#discordlink {
 }
 
 /* Wrapper for non-splash sections ("main" sections) */
-.main {
+main {
   background-image: url(../img/GEO-TERRAIN4_19.svg);
   background-size: cover;
 }
@@ -118,33 +120,24 @@ a#discordlink {
 }
 
 /* Wrapper for individual main sections ("segments") */
-.segment {
+content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  padding-top: 5rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 
 /** Text Paragraphs for each segment */
-.information {
+section {
   /* Auto Layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
-
-  position: relative;
-  max-width: 20vw;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  margin: 2rem;
+  padding: 1rem;
 }
 
 /* Flex wrapper for the height labels */
@@ -152,16 +145,16 @@ a#discordlink {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
+  padding: 2rem;
 
-  position: relative;
+  position: static;
 
   /* Inside Auto Layout */
-
   flex: none;
-  order: 0;
-  align-self: stretch;
+  order: 1;
+  align-self: center;
   flex-grow: 0;
 }
 
@@ -172,6 +165,7 @@ a#discordlink {
   justify-content: center;
   align-items: center;
   padding: 0px;
+  margin: 1rem;
 
   position: static;
 
@@ -567,44 +561,26 @@ img#collapsed-roof {
   transform: translate(-1rem, 7rem);
 }
 
-#roofs.segment .heightlabels {
+#roofscontent .heightlabels {
   align-self: center;
 }
 
-.isometric-wrapper .collapsed#roofs-collapsed {
-  align-self: center;
-  transform: translateY(-100px);
-}
 
 /** Extras Section */
-.segment .extra {
+content#extra {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  order: 4;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  align-content: space-between;
+  justify-content: space-evenly;
 }
 
-.segment .extra .information {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 2em;
-  margin: 2em;
-}
-
-.segment .baileywiki {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 1;
-  padding: 2em;
-  margin: 2em;
-  margin-left: 15vw;
+content#extra .information p {
+  word-wrap: break-word;
+  overflow-wrap: normal;
+  max-width: 30vw;
 }
