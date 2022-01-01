@@ -16,10 +16,6 @@ https://user-images.githubusercontent.com/95392008/147842446-6e528d8a-11cf-43c1-
 ![image](https://user-images.githubusercontent.com/95392008/147805983-f4f8fd47-6476-44f8-a760-4f6bce3fb5e1.png)
 
 # Credits
-
-https://user-images.githubusercontent.com/95392008/147842446-6e528d8a-11cf-43c1-badb-0619289acc0f.mp4
-
-
 The images I used for the backdrops etc. were licenced and paid for via Envato Elements. Icons courtesy of BoxIcons. 
 
 I will not be uploading the assets I do not own or did not create myself. 
