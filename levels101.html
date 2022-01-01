@@ -8,6 +8,7 @@
   <link type="text/css" href="css/styleguide.css" rel="stylesheet" />
   <link type="text/css" href="css/levels101.css" rel="stylesheet" />
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 </head>
 
 <body>
@@ -40,22 +41,46 @@
   </heading>
   <main>
     <div class="container-center">
-      <img src="../img/floating-asset-2.svg" alt="floating wireframe donut" style="
-            position: absolute;
-            right: 10rem;
-            height: 25vh;
-            width: 10vw;
-            transform: translateY(75rem);
-            z-index: -3; 
+      <div class="rellax" data-rellax-speed="3">
+        <img src="../img/floating-asset-2.svg" alt="floating wireframe donut" style="
+         position: absolute;
+         right: 10rem;
+          height: 25vh;
+        width: 10vw;
+         top: 90vh;
+         z-index: -3; 
        ">
-      <img src="../img/floating-asset-1.svg" alt="floating cylinder" style="
-            position: absolute;
-            left: 5rem;
-            height: 25vh;
-            width: 10vw;
-            transform: translateY(125rem);
-            z-index: -3; 
+      </div>
+      <div class="rellax" data-rellax-speed="3">
+        <img src="../img/floating-asset-1.svg" alt="floating cylinder" style="
+         position: absolute;
+         left: 5rem;
+         height: 25vh;
+         width: 10vw;
+         top: 185vh;
+         z-index: -3; 
          ">
+      </div>
+      <div class="rellax" data-rellax-speed="3">
+        <img src="../img/floating-asset-3.svg" alt="floating sphere" style="
+        position: absolute;
+        right: 5rem;
+        height: 25vh;
+        width: 10vw;
+        top: 300vh;
+        z-index: -3; 
+     ">
+      </div>
+      <div class="rellax" data-rellax-speed="3">
+        <img src="../img/floating-asset-4.svg" alt="floating blob" style="
+        position: absolute;
+        left: 5rem;
+        height: 25vh;
+        width: 10vw;
+        top: 450vh;
+        z-index: -3; 
+      ">
+      </div>
       <content id="basics">
         <section>
           <h2>Basics</h2>
@@ -224,11 +249,11 @@
             through tile polygons</p>
           <ul>
             <li>
-              Holes <span class="red">do not</span> allow tokens to fall
+              Holes <strong>do not</strong> allow tokens to fall
               through—They are used for vision, not for movement.
             </li>
             <li>
-              Holes <span class="red">do not</span> add transparency to the
+              Holes <strong>do not</strong> add transparency to the
               images in your tiles. You will not be able to see through them
               if there is not transparency in the area of the image the hole
               is over.
@@ -433,6 +458,11 @@
     </h3>
     <h3>(Read the pins first!)</h3>
   </footer>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      center: true
+    });
+  </script>
 </body>
 
 </html>

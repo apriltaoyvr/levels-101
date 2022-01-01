@@ -101,3 +101,7 @@ li {
   padding: 0.25em;
   text-shadow: var(--shadow-elevation-low);
 }
+
+strong {
+  color: var(--middle);
+}

@@ -55,11 +55,14 @@
   color: var(--roof-color);
 }
 
+/* Floating Images */
+
+
 /*
 * Containers + Wrappers
 */
 
-/* Big Fat Pages (Splash Pages) */
+/** Splash Pages */
 /* Intro */
 heading {
   background-image: url(../img/JD2.svg);
@@ -100,6 +103,7 @@ footer {
   height: 100vh;
 }
 
+/* Gradient Link */
 a#discordlink {
   background: -webkit-linear-gradient(135deg, #977df7, #418fbf);
   -webkit-background-clip: text;
@@ -107,7 +111,8 @@ a#discordlink {
   text-decoration: none;
 }
 
-/* Wrapper for non-splash sections ("main" sections) */
+/** Containers and Wrappers */
+/* Container for non-splash sections ("main" sections) */
 main {
   background-image: url(../img/GEO-TERRAIN4_19.svg);
   background-size: cover;
@@ -119,7 +124,7 @@ main {
   padding: 2rem 2rem;
 }
 
-/* Wrapper for individual main sections ("segments") */
+/* Container for individual main sections ("segments") */
 content {
   display: flex;
   flex-direction: row;
@@ -140,6 +145,7 @@ section {
   padding: 1rem;
 }
 
+/** Examples */
 /* Flex wrapper for the height labels */
 .heightlabels {
   display: flex;
@@ -344,13 +350,6 @@ section {
   box-shadow: var(--shadow-elevation-medium);
 }
 
-.square-td .square#td-roof {
-  background-color: var(--roof-color);
-  left: calc(50% - 75px / 2 - 0px);
-  top: calc(50% - 75px / 2 - 101.5px);
-  box-shadow: var(--shadow-elevation-medium);
-}
-
 .square-td .square#td-top {
   background-color: var(--top);
   left: calc(50% - 75px / 2 - 0px);
@@ -504,6 +503,7 @@ img#td-stairs-blue {
   border-color: var(--bottom);
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
 }
+
 /* Isometric Expanded */
 .square-hollow#top-hollow-co {
   background-color: none;
@@ -556,15 +556,23 @@ img#td-stairs-blue {
 }
 
 /** Roofs Section */
-img#collapsed-roof {
-  max-height: 200px;
-  transform: translate(-1rem, 7rem);
-}
-
+/* Label */
 #roofscontent .heightlabels {
   align-self: center;
 }
 
+/* Infinity Roof Images */
+.square-td .square#td-roof {
+  background-color: var(--roof-color);
+  left: calc(50% - 75px / 2 - 0px);
+  top: calc(50% - 75px / 2 - 101.5px);
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+img#collapsed-roof {
+  max-height: 200px;
+  transform: translate(-1rem, 7rem);
+}
 
 /** Extras Section */
 content#extra {
