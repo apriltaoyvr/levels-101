@@ -104,6 +104,7 @@ footer {
 
 /* Gradient Link */
 a#discordlink {
+  background: var(--roof-color);
   background: -webkit-linear-gradient(135deg, #977df7, #418fbf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
