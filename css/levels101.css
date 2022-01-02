@@ -55,12 +55,6 @@
   color: var(--top-text);
 }
 
-/* Floating Images */
-
-/*
-* Containers + Wrappers
-*/
-
 /** Splash Pages */
 /* Intro */
 heading {
@@ -128,8 +122,9 @@ content {
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
+  gap: 5rem;
 }
 
 /** Text Paragraphs for each segment */
@@ -158,6 +153,10 @@ section {
   order: 1;
   align-self: center;
   flex-grow: 0;
+}
+
+.heightlabels h4 {
+  text-align: center;
 }
 
 /* Flex wrapper for special example squares */
