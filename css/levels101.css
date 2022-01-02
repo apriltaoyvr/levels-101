@@ -43,6 +43,10 @@
   color: var(--top);
 }
 
+.roof-color {
+  color: var(--roof-color);
+}
+
 .low-text {
   color: var(--bottom-text);
 }
@@ -51,9 +55,6 @@
   color: var(--top-text);
 }
 
-.roof-color {
-  color: var(--roof-color);
-}
 
 /* Floating Images */
 
