@@ -7,23 +7,23 @@
   <link type="text/css" href="css/globals.css" rel="stylesheet" />
   <link type="text/css" href="css/styleguide.css" rel="stylesheet" />
   <link type="text/css" href="css/levels101.css" rel="stylesheet" />
-  <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  <link type="text/css" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 </head>
 
 <body>
-  <nav flex="">
-    <a href="https://theripper93.com">
-      <box-icon id="home" name="home" type="solid" color="var(--white)" size="md">
-      </box-icon>
-    </a>
+  <nav>
+    <div class="start">
+      <a href="https://theripper93.com" style="color: var(--white);">
+        <i class="bx bxs-home bx-md"></i>
+      </a>
+    </div>
     <div class="central"></div>
     <div class="end">
-      <a href="https://www.patreon.com/theripper93">
-        <box-icon id="patreon" name="patreon" type="logo" color="var(--white)" size="md">
-        </box-icon>
-      </a><a href="https://discord.gg/F53gBjR97G">
-        <box-icon id="discord" name="discord-alt" type="logo" color="var(--white)" size="md"></box-icon>
+      <a href="https://www.patreon.com/theripper93" style="color: var(--white);">
+        <i class="bx bxl-patreon bx-md"></i>
+      </a><a href="https://discord.gg/F53gBjR97G" style="color: var(--white);">
+        <i class="bx bxl-discord-alt bx-md"></i>
       </a>
     </div>
   </nav>
@@ -41,45 +41,47 @@
   </heading>
   <main>
     <div class="container-center">
-      <div class="rellax" data-rellax-speed="3">
-        <img src="img/floating-asset-2.svg" alt="floating wireframe donut" draggable="false" style="
-         position: absolute;
-         right: 10rem;
+      <div class="floating">
+        <div class="rellax" data-rellax-speed="2">
+          <img src="img/floating-asset-2.svg" alt="floating wireframe donut" draggable="false" style="
+          position: absolute;
+          right: 10rem;
           height: 25vh;
           width: 10vw;
-         top: 90vh;
-         z-index: -3; 
-       ">
-      </div>
-      <div class="rellax" data-rellax-speed="3">
-        <img src="img/floating-asset-1.svg" alt="floating cylinder" draggable="false" style="
-         position: absolute;
-         left: 5rem;
-         height: 25vh;
-         width: 10vw;
-         top: 185vh;
-         z-index: -3; 
-         ">
-      </div>
-      <div class="rellax" data-rellax-speed="3">
-        <img src="img/floating-asset-3.svg" alt="floating sphere" draggable="false" style="
-        position: absolute;
-        right: 5rem;
-        height: 25vh;
-        width: 10vw;
-        top: 300vh;
-        z-index: -3; 
-     ">
-      </div>
-      <div class="rellax" data-rellax-speed="3">
-        <img src="img/floating-asset-4.svg" alt="floating blob" draggable="false" style="
-        position: absolute;
-        left: 5rem;
-        height: 25vh;
-        width: 10vw;
-        top: 450vh;
-        z-index: -3; 
+          top: 50vh;
+          z-index: -3; 
+        ">
+        </div>
+        <div class="rellax" data-rellax-speed="3">
+          <img src="img/floating-asset-1.svg" alt="floating cylinder" draggable="false" style="
+          position: absolute;
+          left: 5rem;
+          height: 25vh;
+          width: 10vw;
+          top: 100vh;
+          z-index: -3; 
+          ">
+        </div>
+        <div class="rellax" data-rellax-speed="4">
+          <img src="img/floating-asset-3.svg" alt="floating sphere" draggable="false" style="
+          position: absolute;
+          right: 5rem;
+          height: 25vh;
+          width: 10vw;
+          top: 200vh;
+          z-index: -3; 
       ">
+        </div>
+        <div class="rellax" data-rellax-speed="5">
+          <img src="img/floating-asset-4.svg" alt="floating blob" draggable="false" style="
+          position: absolute;
+          left: 5rem;
+          height: 25vh;
+          width: 10vw;
+          top: 330vh;
+          z-index: -3; 
+        ">
+        </div>
       </div>
       <content id="basics">
         <section>
@@ -118,7 +120,7 @@
           </div>
           <div class="middle">
             <h4>
-              <span class="red">19</span><span class="span paragraph">/</span><span class="red">10</span>
+              <span class="red">10</span><span class="span paragraph">/</span><span class="red">19</span>
               <br />
             </h4>
             <h6>
@@ -127,8 +129,7 @@
           </div>
           <div class="bottom">
             <h4>
-              <span class="blue">19</span><span class="span paragraph">/</span><span class="blue">10</span>
-              <br />
+              <span class="blue">0</span><span class="span paragraph">/</span><span class="blue">9</span>
             </h4>
             <h6>
               <span class="blue">Bottom</span><span class="span paragraph">/</span><span class="blue">Top</span>
@@ -141,15 +142,14 @@
             <h5>The 3/4ths view</h5>
           </div>
           <div class="isometric-wrapper">
-            <div class="expanded">
-              <div class="square" id="expanded-top"></div>
-              <div class="square" id="expanded-middle"></div>
-              <div class="square" id="expanded-bottom"></div>
-            </div>
             <div class="collapsed">
-              <div class="square" id="collapsed-top"></div>
-              <div class="square" id="collapsed-middle"></div>
-              <div class="square" id="collapsed-bottom"></div>
+              <img src="img/iso-co-basic.svg"
+                alt="a stack of 3 coloured isometric squares packed tightly. in ascending order: blue, red, yellow">
+            </div>
+
+            <div class="expanded">
+              <img src="img/iso-ex-basic.svg"
+                alt="a stack of 3 coloured isometric squares. in ascending order: blue, red, yellow">
             </div>
           </div>
         </div>
@@ -158,10 +158,10 @@
             <h2>Top-down</h2>
             <h5>Cross section</h5>
           </div>
-          <div class="square-td">
-            <div class="square" id="td-top"></div>
-            <div class="square" id="td-middle"></div>
-            <div class="square" id="td-bottom"></div>
+          <div class="td-wrapper">
+            <div class="square" style="background-color: var(--top)"></div>
+            <div class="square" style="background-color: var(--middle)"></div>
+            <div class="square" style="background-color: var(--bottom)"></div>
           </div>
         </div>
         <div class="sideview">
@@ -192,8 +192,9 @@
           </ul>
           <p>
             To better understand this, we will have a stair with the values of
-            <span class="low-text">0</span> and <span class="high-text">9</span>. 
-            <br></br> The solid lines represent the stair’s height in addition to its effective height due to Property #3 above.
+            <span class="low-text">0</span> and <span class="high-text">9</span>.
+            <br>The solid lines represent the stair’s height in addition to its effective height due to Property #3
+            above.
           </p>
         </section>
         <div class="example" name="stairs">
@@ -210,14 +211,13 @@
             <h5>The 3/4ths view</h5>
           </div>
           <div class="isometric-wrapper">
-            <div class="expanded">
-              <img src="img/stairs-cube-ex.svg" alt="a 3d rectangle between 2 layers" draggable="false" id="expanded-stairs" />
-            </div>
             <div class="collapsed">
-              <img src="img/stairs-cube-co.svg" alt="a 3d rectangle between 2 layers" draggable="false" id="collapsed-stairs" />
-              <div class="square" id="collapsed-top"></div>
-              <div class="square" id="collapsed-middle"></div>
-              <div class="square" id="collapsed-bottom"></div>
+              <img src="img/stairs-cube-co.svg" alt="a 3d rectangle between 2 layers" draggable="false"
+                id="collapsed-stairs" />
+            </div>
+            <div class="expanded">
+              <img src="img/stairs-cube-ex.svg" alt="a 3d rectangle between 2 layers" draggable="false"
+                id="expanded-stairs" />
             </div>
           </div>
         </div>
@@ -226,10 +226,12 @@
             <h2>Top-down</h2>
             <h5>Cross section</h5>
           </div>
-          <div class="square-td">
-            <div class="square" id="td-top"></div>
-            <img src="img/td-stairs-pink.svg" alt="a square with a smaller hollow square inside" draggable="false" id="td-stairs-pink" />
-            <img src="img/td-stairs-blue.svg" alt="a square with a smaller hollow square inside" draggable="false" id="td-stairs-blue" />
+          <div class="td-wrapper">
+            <div class="square" style="background-color: var(--top)"></div>
+            <img src="img/td-stairs-pink.svg" alt="a square with a smaller hollow square inside" draggable="false"
+              id="td-stairs-pink" />
+            <img src="img/td-stairs-blue.svg" alt="a square with a smaller hollow square inside" draggable="false"
+              id="td-stairs-blue" />
           </div>
         </div>
         <div class="sideview">
@@ -237,7 +239,8 @@
             <h2>Side View</h2>
             <h5>Flat on the sides</h5>
           </div>
-          <img src="img/sv-stairs.svg" alt="two of the bottom squares with a hollow square within them" draggable="false" id="sv-stairs" />
+          <img src="img/sv-stairs.svg" alt="two of the bottom squares with a hollow square within them"
+            draggable="false" id="sv-stairs" />
         </div>
       </content>
       <content id="holes">
@@ -276,14 +279,10 @@
           </div>
           <div class="isometric-wrapper">
             <div class="collapsed">
-              <div class="square-hollow" id="top-hollow-co"></div>
-              <div class="square-hollow" id="middle-hollow-co"></div>
-              <div class="square-hollow" id="bottom-hollow-co"></div>
+              <img src="img/hollow-stack-collapsed.png" alt="a stack of 3 collapsed hollow squares">
             </div>
             <div class="expanded">
-              <div class="square-hollow" id="top-hollow"></div>
-              <div class="square-hollow" id="middle-hollow"></div>
-              <div class="square-hollow" id="bottom-hollow"></div>
+              <img src="img/hollow-stack-expanded.png" alt="a stack of 3 collapsed hollow squares">
             </div>
           </div>
         </div>
@@ -292,10 +291,10 @@
             <h2>Top-down</h2>
             <h5>Cross section</h5>
           </div>
-          <div class="square-td">
-            <div class="square-hollow" id="td-top-hollow"></div>
-            <div class="square-hollow" id="td-middle-hollow"></div>
-            <div class="square-hollow" id="td-bottom-hollow"></div>
+          <div class="td-wrapper">
+            <div class="square-hollow" style="border-color: var(--top)"></div>
+            <div class="square-hollow" style="border-color: var(--middle)"></div>
+            <div class="square-hollow" style="border-color: var(--bottom)"></div>
           </div>
         </div>
         <div class="sideview">
@@ -304,9 +303,9 @@
             <h5>Flat on the sides</h5>
           </div>
           <div class="hollow-rectangle-wrapper">
-            <img src="img/hollow-yellow-rect.svg" alt="a rectangle that is hollow in the middle" draggable="false"/>
-            <img src="img/hollow-red-rect.svg" alt="a rectangle that is hollow in the middle" draggable="false"/>
-            <img src="img/hollow-blue-rect.svg" alt="a rectangle that is hollow in the middle" draggable="false"/>
+            <img src="img/hollow-yellow-rect.svg" alt="a rectangle that is hollow in the middle" draggable="false" />
+            <img src="img/hollow-red-rect.svg" alt="a rectangle that is hollow in the middle" draggable="false" />
+            <img src="img/hollow-blue-rect.svg" alt="a rectangle that is hollow in the middle" draggable="false" />
           </div>
         </div>
       </content>
@@ -323,7 +322,7 @@
 
             Roofs have many settings and opportunities to do unique things with. However, because there are many
             potential uses for roofs, roofs tend to cause quite a bit of confusion for people. This will only be a basic
-            visual representation of roofs but a more in-depth page may be coming soon. <br /><br />
+            visual representation of roofs. <br /><br />
 
             The values for a roof should be:<br /><br />
 
@@ -352,7 +351,7 @@
           </div>
           <div class="middle">
             <h4>
-              <span class="red">19</span><span class="span paragraph">/</span><span class="red">10</span>
+              <span class="red">10</span><span class="span paragraph">/</span><span class="red">19</span>
               <br />
             </h4>
             <h6>
@@ -361,7 +360,7 @@
           </div>
           <div class="bottom">
             <h4>
-              <span class="blue">19</span><span class="span paragraph">/</span><span class="blue">10</span>
+              <span class="blue">0</span><span class="span paragraph">/</span><span class="blue">9</span>
               <br />
             </h4>
             <h6>
@@ -376,16 +375,12 @@
           </div>
           <div class="isometric-wrapper">
             <div class="expanded" id="roofs-expanded">
-              <img src="img/roof-2.svg" style="height: 150px; width: 150px" alt="a gradient rectangle representing the infiniteness of the roof" draggable="false"/>
-              <div class="square" id="expanded-top"></div>
-              <div class="square" id="expanded-middle"></div>
-              <div class="square" id="expanded-bottom"></div>
+              <img src="img/Roof-1.svg"
+                alt="a gradient rectangle representing the infiniteness of the roof" draggable="false" />
             </div>
             <div class="collapsed" id="roofs-collapsed">
-              <img id="collapsed-roof" src="img/roof-1.svg" alt="a gradient rectangle representing the infiniteness of the roof" draggable="false" />
-              <div class="square" id="collapsed-top"></div>
-              <div class="square" id="collapsed-middle"></div>
-              <div class="square" id="collapsed-bottom"></div>
+              <img id="collapsed-roof" src="img/Roof-2.svg"
+                alt="a gradient rectangle representing the infiniteness of the roof" draggable="false" />
             </div>
           </div>
         </div>
@@ -394,11 +389,11 @@
             <h2>Top-down</h2>
             <h5>Cross section</h5>
           </div>
-          <div class="square-td">
-            <div class="square" id="td-roof"></div>
-            <div class="square" id="td-top"></div>
-            <div class="square" id="td-middle"></div>
-            <div class="square" id="td-bottom"></div>
+          <div class="td-wrapper">
+            <div class="square" style="background-color: var(--roof-color);"></div>
+            <div class="square" style="background-color: var(--top);"></div>
+            <div class="square" style="background-color: var(--middle);"></div>
+            <div class="square" style="background-color: var(--bottom);"></div>
           </div>
         </div>
         <div class="sideview">
@@ -407,9 +402,9 @@
             <h5>Flat on the sides</h5>
           </div>
           <div class="rectangle" id="sv-roof"></div>
-          <div class="rectangle" id="sv-top"></div>
-          <div class="rectangle" id="sv-middle"></div>
-          <div class="rectangle" id="sv-bottom"></div>
+          <div class="rectangle" style="background-color: var(--top);"></div>
+          <div class="rectangle" style="background-color: var(--middle);"></div>
+          <div class="rectangle" style="background-color: var(--bottom);"></div>
         </div>
       </content>
       <content id="extra">
@@ -442,7 +437,10 @@
             greater depth:
           </p>
           <br />
-          <iframe src="https://www.youtube.com/watch?v=NCg6T7lMrRs" frameborder="0" width="654" height="390"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NCg6T7lMrRs"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </section>
       </content>
     </div>

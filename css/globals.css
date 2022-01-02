@@ -1,13 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
-@font-face {
-  font-family: "Inconsolata";
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
-}
-
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -36,7 +29,7 @@ body {
 
 nav {
   background-color: var(--navbg);
-  box-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow);
 
   align-items: center;
   display: flex;
@@ -44,13 +37,17 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
 
-  height: 5vh;
+  height: 3rem;
   left: 0;
   right: 0;
   top: 0;
   width: 100%;
 
   z-index: 3;
+}
+
+nav .start {
+  margin-left: 0.75rem;
 }
 
 nav .central {
@@ -60,33 +57,18 @@ nav .central {
 }
 
 nav .end {
+  margin-right: 0.75rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding: 0px;
 
   order: 1;
   align-self: stretch;
   flex-grow: 0;
 }
 
-box-icon {
+i {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin: 0.5rem;
-}
-
-box-icon#home {
-  align-self: flex-start;
-  order: 0;
-}
-
-/* TODO: Align from right properly */
-box-icon#patreon {
-  align-self: flex-end;
-  order: 1;
-}
-
-box-icon#discord {
-  order: 2;
+  padding: 0.25rem;
 }

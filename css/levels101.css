@@ -3,22 +3,22 @@
 .square {
   height: 75px;
   width: 75px;
-  background: var(--white);
+  background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .square-hollow {
-  height: 63px;
-  width: 63px;
+  height: 75px;
+  width: 75px;
   background: transparent;
-  border: 12px solid var(--white);
+  border: 10px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .rectangle {
   width: 125px;
   height: 25px;
-  background: var(--white);
+  background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -26,7 +26,7 @@
   width: 125px;
   height: 25px;
   background: transparent;
-  border: 2px dashed var(--white);
+  border: 2px dashed white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -54,7 +54,6 @@
 .high-text {
   color: var(--top-text);
 }
-
 
 /* Floating Images */
 
@@ -90,15 +89,16 @@ heading h3 {
 
 /* Epilogue */
 footer {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
   background-image: url(../img/JD1.svg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
 
   height: 100vh;
 }
@@ -107,6 +107,7 @@ footer {
 a#discordlink {
   background: var(--roof-color);
   background: -webkit-linear-gradient(135deg, #977df7, #418fbf);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -117,12 +118,6 @@ a#discordlink {
 main {
   background-image: url(../img/GEO-TERRAIN4_19.svg);
   background-size: cover;
-}
-
-/* Subwrapper to create centering without ruining the bg */
-.container-center {
-  align-items: center;
-  padding: 2rem 2rem;
 }
 
 /* Container for individual main sections ("segments") */
@@ -236,84 +231,6 @@ section {
   margin: 45px 0px;
 }
 
-.isometric-wrapper .expanded {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 0px 2rem;
-}
-
-.isometric-wrapper #expanded-top {
-  background: var(--top);
-
-  position: static;
-  top: 0%;
-  bottom: 65.5%;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-.isometric-wrapper #expanded-middle {
-  background: var(--middle);
-  top: 33.33%;
-  bottom: 32.16%;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-.isometric-wrapper #expanded-bottom {
-  background: var(--bottom);
-  top: 66.67%;
-  bottom: -1.17%;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-.isometric-wrapper .collapsed {
-  position: relative;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 0px 1rem;
-}
-
-.isometric-wrapper #collapsed-top {
-  background: var(--top);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate(-5rem, 5rem);
-  box-shadow: var(--shadow-elevation-medium);
-
-  position: relative;
-  z-index: -1;
-}
-
-.isometric-wrapper #collapsed-middle {
-  background: var(--middle);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-  box-shadow: var(--shadow-elevation-medium);
-
-  position: relative;
-  z-index: -2;
-}
-
-.isometric-wrapper #collapsed-bottom {
-  background: var(--bottom);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate(5rem, -5rem);
-  box-shadow: var(--shadow-elevation-medium);
-
-  position: relative;
-  z-index: -3;
-}
-
 /** Topdown */
 .topdown {
   display: flex;
@@ -328,7 +245,7 @@ section {
   align-self: stretch;
 }
 
-.square-td {
+.td-wrapper {
   /* Auto Layout */
   display: flex;
   flex-direction: column;
@@ -345,31 +262,10 @@ section {
   margin: 3rem 0px;
 }
 
-.square-td .square {
+.td-wrapper .square {
   align-items: center;
   margin: 1rem 0rem;
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-.square-td .square#td-top {
-  background-color: var(--top);
-  left: calc(50% - 75px / 2 - 0px);
-  top: calc(50% - 75px / 2 - 101.5px);
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-.square-td .square#td-middle {
-  background-color: var(--middle);
-  left: calc(50% - 75px / 2 - 0px);
-  top: calc(50% - 75px / 2 + 0.5px);
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-.square-td .square#td-bottom {
-  background-color: var(--bottom);
-  left: calc(50% - 75px / 2 - 0px);
-  top: calc(50% - 75px / 2 - 101.5px);
-  box-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow);
 }
 
 /** Side view */
@@ -398,7 +294,6 @@ section {
   order: 1;
   flex-grow: 0;
   margin-top: 5rem;
-  margin-left: 3rem;
 }
 
 .sideview .hollow-rectangle-wrapper {
@@ -415,35 +310,28 @@ section {
 }
 .sideview .hollow-rectangle-wrapper img {
   margin-top: 5rem;
-  margin-left: 3rem;
-  box-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow);
 }
 
 .sideview .rectangle#sv-roof {
   height: 5rem;
-  background: linear-gradient(
-    180deg,
-    rgba(74, 217, 136, 0) 0%,
-    rgba(74, 217, 136, 0.25) 50%,
-    var(--roof-color) 75%,
-    var(--roof-color) 100%
-  );
-  box-shadow: var(--shadow-elevation-medium);
+  background: linear-gradient(180deg, rgba(15, 242, 49, 0) 0%, rgba(15, 242, 49, 0.0632979) 30%, rgba(15, 242, 49, 0.12117) 39.58%, rgba(15, 242, 49, 0.335484) 68.23%, rgba(15, 242, 49, 0.36) 77.07%, #0FF231 77.08%, #0FF231 96.87%);  
+  box-shadow: var(--shadow);
 }
 
 .sideview .rectangle#sv-top {
   background: var(--top);
-  box-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow);
 }
 
 .sideview .rectangle#sv-middle {
   background: var(--middle);
-  box-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow);
 }
 
 .sideview .rectangle#sv-bottom {
   background: var(--bottom);
-  box-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow);
 }
 
 /** Basics section */
@@ -463,115 +351,19 @@ section {
   align-items: center;
 }
 
-img#collapsed-stairs {
-  position: relative;
-  transform: translate(7px, 163px);
-  z-index: -1;
-}
-
-img#expanded-stairs {
-  position: relative;
-  z-index: -1;
-}
-
-img#sv-stairs {
-  position: relative;
-  transform: translate(0px, 88px);
-}
-
 img#td-stairs-pink,
 img#td-stairs-blue {
   margin: 1em;
 }
 
 /** Holes Section */
-/* Isometric Collapsed */
-.square-hollow#top-hollow {
-  background-color: none;
-  border-color: var(--top);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-}
-
-.square-hollow#middle-hollow {
-  background-color: none;
-  border-color: var(--middle);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-}
-
-.square-hollow#bottom-hollow {
-  background-color: none;
-  border-color: var(--bottom);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-}
-
-/* Isometric Expanded */
-.square-hollow#top-hollow-co {
-  background-color: none;
-  border-color: var(--top);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate(-5rem, 5rem);
-
-  position: relative;
-  z-index: -1;
-}
-
-.square-hollow#middle-hollow-co {
-  background-color: none;
-  border-color: var(--middle);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-
-  position: relative;
-  z-index: -2;
-}
-
-.square-hollow#bottom-hollow-co {
-  background-color: none;
-  border-color: var(--bottom);
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translate(5rem, -5rem);
-
-  position: relative;
-  z-index: -3;
-}
-
 .rectangle-dashed#sv-top-hollow {
   background: none;
 }
 
 /* Topdown */
-.square-td .square-hollow {
+.td-wrapper .square-hollow {
   margin: 1em;
-}
-.square-hollow#td-top-hollow {
-  background-color: none;
-  border-color: var(--top);
-}
-
-.square-hollow#td-middle-hollow {
-  background-color: none;
-  border-color: var(--middle);
-}
-
-.square-hollow#td-bottom-hollow {
-  background-color: none;
-  border-color: var(--bottom);
-}
-
-/** Roofs Section */
-/* Label */
-#roofscontent .heightlabels {
-  align-self: center;
-}
-
-/* Infinity Roof Images */
-.square-td .square#td-roof {
-  background-color: var(--roof-color);
-  left: calc(50% - 75px / 2 - 0px);
-  top: calc(50% - 75px / 2 - 101.5px);
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-img#collapsed-roof {
-  max-height: 200px;
-  transform: translate(-1rem, 7rem);
 }
 
 /** Extras Section */
@@ -592,3 +384,4 @@ content#extra .information p {
   overflow-wrap: normal;
   max-width: 30vw;
 }
+
