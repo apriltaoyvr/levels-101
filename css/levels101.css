@@ -123,16 +123,21 @@ content {
   justify-content: center;
   position: relative;
   padding: 5rem 0 5rem 0;
-  gap: 5rem;
 }
 
-/** Text Paragraphs for each segment */
+/** Left-hand area of the segments */
 section {
   /* Auto Layout */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   padding: 1rem;
+}
+
+/** The text in the lefthand area of the section */
+article {
+  display: flex;
+  flex-direction: column;
 }
 
 /** Examples */
