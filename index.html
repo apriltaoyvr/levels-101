@@ -161,6 +161,7 @@
               </p>
             </article>
             <div class="heightlabels">
+              <h4>Height</h4>
               <div class="top">
                 <h4>
                   <span class="yellow">20</span
@@ -200,53 +201,55 @@
               </div>
             </div>
           </section>
-          <div class="isometric">
-            <div class="secondary-title">
-              <h2>Isometric</h2>
-              <h5>The 3/4ths view</h5>
-            </div>
-            <div class="isometric-wrapper">
-              <div class="collapsed">
-                <img
-                  src="img/iso-co-basic.svg"
-                  alt="a stack of 3 coloured isometric squares packed tightly. in ascending order: blue, red, yellow"
-                />
+          <aside>
+            <div class="isometric">
+              <div class="secondary-title">
+                <h2>Isometric</h2>
+                <h5>The 3/4ths view</h5>
               </div>
-
-              <div class="expanded">
-                <img
-                  src="img/iso-ex-basic.svg"
-                  alt="a stack of 3 coloured isometric squares. in ascending order: blue, red, yellow"
-                />
+              <div class="isometric-wrapper">
+                <div class="collapsed">
+                  <img
+                    src="img/iso-co-basic.svg"
+                    alt="a stack of 3 coloured isometric squares packed tightly. in ascending order: blue, red, yellow"
+                  />
+                </div>
+  
+                <div class="expanded">
+                  <img
+                    src="img/iso-ex-basic.svg"
+                    alt="a stack of 3 coloured isometric squares. in ascending order: blue, red, yellow"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="topdown">
-            <div class="secondary-title">
-              <h2>Top-down</h2>
-              <h5>Cross section</h5>
+            <div class="topdown">
+              <div class="secondary-title">
+                <h2>Top-down</h2>
+                <h5>Cross section</h5>
+              </div>
+              <div class="td-wrapper">
+                <div class="square" style="background-color: var(--top)"></div>
+                <div class="square" style="background-color: var(--middle)"></div>
+                <div class="square" style="background-color: var(--bottom)"></div>
+              </div>
             </div>
-            <div class="td-wrapper">
-              <div class="square" style="background-color: var(--top)"></div>
-              <div class="square" style="background-color: var(--middle)"></div>
-              <div class="square" style="background-color: var(--bottom)"></div>
+            <div class="sideview">
+              <div class="secondary-title">
+                <h2>Side View</h2>
+                <h5>Flat on the sides</h5>
+              </div>
+              <div class="rectangle" style="background-color: var(--top)"></div>
+              <div
+                class="rectangle"
+                style="background-color: var(--middle)"
+              ></div>
+              <div
+                class="rectangle"
+                style="background-color: var(--bottom)"
+              ></div>
             </div>
-          </div>
-          <div class="sideview">
-            <div class="secondary-title">
-              <h2>Side View</h2>
-              <h5>Flat on the sides</h5>
-            </div>
-            <div class="rectangle" style="background-color: var(--top)"></div>
-            <div
-              class="rectangle"
-              style="background-color: var(--middle)"
-            ></div>
-            <div
-              class="rectangle"
-              style="background-color: var(--bottom)"
-            ></div>
-          </div>
+          </aside>
         </content>
         <content id="stairs">
           <section>
@@ -283,63 +286,65 @@
               </div>
             </div>
           </section>
-          <div class="isometric">
-            <div class="secondary-title">
-              <h2>Isometric</h2>
-              <h5>The 3/4ths view</h5>
+          <aside>
+            <div class="isometric">
+              <div class="secondary-title">
+                <h2>Isometric</h2>
+                <h5>The 3/4ths view</h5>
+              </div>
+              <div class="isometric-wrapper">
+                <div class="collapsed">
+                  <img
+                    src="img/stairs-cube-co.svg"
+                    alt="a 3d rectangle between 2 layers"
+                    draggable="false"
+                    id="collapsed-stairs"
+                  />
+                </div>
+                <div class="expanded">
+                  <img
+                    src="img/stairs-cube-ex.svg"
+                    alt="a 3d rectangle between 2 layers"
+                    draggable="false"
+                    id="expanded-stairs"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="isometric-wrapper">
-              <div class="collapsed">
+            <div class="topdown">
+              <div class="secondary-title">
+                <h2>Top-down</h2>
+                <h5>Cross section</h5>
+              </div>
+              <div class="td-wrapper">
+                <div class="square" style="background-color: var(--top)"></div>
                 <img
-                  src="img/stairs-cube-co.svg"
-                  alt="a 3d rectangle between 2 layers"
+                  src="img/td-stairs-pink.svg"
+                  alt="a square with a smaller hollow square inside"
                   draggable="false"
-                  id="collapsed-stairs"
+                  id="td-stairs-pink"
+                />
+                <img
+                  src="img/td-stairs-blue.svg"
+                  alt="a square with a smaller hollow square inside"
+                  draggable="false"
+                  id="td-stairs-blue"
                 />
               </div>
-              <div class="expanded">
-                <img
-                  src="img/stairs-cube-ex.svg"
-                  alt="a 3d rectangle between 2 layers"
-                  draggable="false"
-                  id="expanded-stairs"
-                />
+            </div>
+            <div class="sideview">
+              <div class="secondary-title">
+                <h2>Side View</h2>
+                <h5>Flat on the sides</h5>
               </div>
-            </div>
-          </div>
-          <div class="topdown">
-            <div class="secondary-title">
-              <h2>Top-down</h2>
-              <h5>Cross section</h5>
-            </div>
-            <div class="td-wrapper">
-              <div class="square" style="background-color: var(--top)"></div>
               <img
-                src="img/td-stairs-pink.svg"
-                alt="a square with a smaller hollow square inside"
+                src="img/sv-stairs.svg"
+                alt="two of the bottom squares with a hollow square within them"
                 draggable="false"
-                id="td-stairs-pink"
-              />
-              <img
-                src="img/td-stairs-blue.svg"
-                alt="a square with a smaller hollow square inside"
-                draggable="false"
-                id="td-stairs-blue"
+                id="sv-stairs"
               />
             </div>
-          </div>
-          <div class="sideview">
-            <div class="secondary-title">
-              <h2>Side View</h2>
-              <h5>Flat on the sides</h5>
-            </div>
-            <img
-              src="img/sv-stairs.svg"
-              alt="two of the bottom squares with a hollow square within them"
-              draggable="false"
-              id="sv-stairs"
-            />
-          </div>
+          </aside>
         </content>
         <content id="holes">
           <section>
@@ -377,66 +382,68 @@
               </div>
             </div>
           </section>
-          <div class="isometric">
-            <div class="secondary-title">
-              <h2>Isometric</h2>
-              <h5>The 3/4ths view</h5>
+          <aside>
+            <div class="isometric">
+              <div class="secondary-title">
+                <h2>Isometric</h2>
+                <h5>The 3/4ths view</h5>
+              </div>
+              <div class="isometric-wrapper">
+                <div class="collapsed">
+                  <img
+                    src="img/hollow-stack-collapsed.png"
+                    alt="a stack of 3 collapsed hollow squares"
+                  />
+                </div>
+                <div class="expanded">
+                  <img
+                    src="img/hollow-stack-expanded.png"
+                    alt="a stack of 3 collapsed hollow squares"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="isometric-wrapper">
-              <div class="collapsed">
+            <div class="topdown">
+              <div class="secondary-title">
+                <h2>Top-down</h2>
+                <h5>Cross section</h5>
+              </div>
+              <div class="td-wrapper">
+                <div class="square-hollow" style="border-color: var(--top)"></div>
+                <div
+                  class="square-hollow"
+                  style="border-color: var(--middle)"
+                ></div>
+                <div
+                  class="square-hollow"
+                  style="border-color: var(--bottom)"
+                ></div>
+              </div>
+            </div>
+            <div class="sideview">
+              <div class="secondary-title">
+                <h2>Side View</h2>
+                <h5>Flat on the sides</h5>
+              </div>
+              <div class="hollow-rectangle-wrapper">
                 <img
-                  src="img/hollow-stack-collapsed.png"
-                  alt="a stack of 3 collapsed hollow squares"
+                  src="img/hollow-yellow-rect.svg"
+                  alt="a rectangle that is hollow in the middle"
+                  draggable="false"
+                />
+                <img
+                  src="img/hollow-red-rect.svg"
+                  alt="a rectangle that is hollow in the middle"
+                  draggable="false"
+                />
+                <img
+                  src="img/hollow-blue-rect.svg"
+                  alt="a rectangle that is hollow in the middle"
+                  draggable="false"
                 />
               </div>
-              <div class="expanded">
-                <img
-                  src="img/hollow-stack-expanded.png"
-                  alt="a stack of 3 collapsed hollow squares"
-                />
-              </div>
             </div>
-          </div>
-          <div class="topdown">
-            <div class="secondary-title">
-              <h2>Top-down</h2>
-              <h5>Cross section</h5>
-            </div>
-            <div class="td-wrapper">
-              <div class="square-hollow" style="border-color: var(--top)"></div>
-              <div
-                class="square-hollow"
-                style="border-color: var(--middle)"
-              ></div>
-              <div
-                class="square-hollow"
-                style="border-color: var(--bottom)"
-              ></div>
-            </div>
-          </div>
-          <div class="sideview">
-            <div class="secondary-title">
-              <h2>Side View</h2>
-              <h5>Flat on the sides</h5>
-            </div>
-            <div class="hollow-rectangle-wrapper">
-              <img
-                src="img/hollow-yellow-rect.svg"
-                alt="a rectangle that is hollow in the middle"
-                draggable="false"
-              />
-              <img
-                src="img/hollow-red-rect.svg"
-                alt="a rectangle that is hollow in the middle"
-                draggable="false"
-              />
-              <img
-                src="img/hollow-blue-rect.svg"
-                alt="a rectangle that is hollow in the middle"
-                draggable="false"
-              />
-            </div>
-          </div>
+          </aside>
         </content>
         <content id="roofs">
           <section>
@@ -465,6 +472,7 @@
             </article>
             <div class="heightlabels" name="roofs">
               <div class="roof-text">
+                <h4>Height</h4>
                 <h4>
                   <span class="roof-color">30</span
                   ><span class="span paragraph">/</span
@@ -517,7 +525,8 @@
               </div>
             </div>
           </section>
-          <div class="isometric">
+          <aside>
+                      <div class="isometric">
             <div class="secondary-title">
               <h2>Isometric</h2>
               <h5>The 3/4ths view</h5>
@@ -571,34 +580,35 @@
               style="background-color: var(--bottom)"
             ></div>
           </div>
+
+          </aside>
         </content>
         <content id="extra">
-            <article id="notes">
-              <h2>Notes</h2>
-              <ul>
-                <li>Each tile should represent only one range of elevations</li>
-              </ul>
-              <p>
-                For example: A tile that has both parts of a floor and a roof
-                piece should be split into two tiles to avoid issues
-              </p>
-              <ul>
-                <li>
-                  The advanced mode is under the Better Roofs module settings
-                </li>
-              </ul>
-              <p>
-                Please have this enabled when asking for help or troubleshooting
-              </p>
-              <br /><br />
-              <img
-                src="https://media.discordapp.net/attachments/913596560779128903/925556978237993020/unknown.png?width=1227&height=917"
-                alt="Screenshot of settings location. It is under settings, then module settings, then Better Roofs. You will see a checkbox for 'Advanced Settings'."
-                style="width: 611px; height: 450px"
-              />
-
-            </article>
-            <article id="bailey">
+          <article id="notes">
+            <h2>Notes</h2>
+            <ul>
+              <li>Each tile should represent only one range of elevations</li>
+            </ul>
+            <p>
+              For example: A tile that has both parts of a floor and a roof
+              piece should be split into two tiles to avoid issues
+            </p>
+            <ul>
+              <li>
+                The advanced mode is under the Better Roofs module settings
+              </li>
+            </ul>
+            <p>
+              Please have this enabled when asking for help or troubleshooting
+            </p>
+            <br /><br />
+            <img
+              src="https://media.discordapp.net/attachments/913596560779128903/925556978237993020/unknown.png"
+              alt="Screenshot of settings location. It is under settings, then module settings, then Better Roofs. You will see a checkbox for 'Advanced Settings'."
+              style="width: 38.1875em; height: 28.125em"
+            />
+          </article>
+          <article id="bailey">
             <h2>Additional Info</h2>
             <p>
               Baileywiki has excellent videos breaking down Levels concepts in
@@ -614,7 +624,7 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            </article>
+          </article>
         </content>
       </div>
     </main>

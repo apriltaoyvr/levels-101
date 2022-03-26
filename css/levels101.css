@@ -138,6 +138,14 @@ section {
 article {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+}
+
+/** The div that holds the visuals **/
+aside {
+  display: flex;
+  flex-direction: row;
+
 }
 
 /** Examples */
@@ -379,3 +387,9 @@ content#extra .information p {
   max-width: 30vw;
 }
 
+/** Media Queries **/
+@media only screen and (max-width: 1800px) {
+  aside {
+    flex-direction: column;
+  }
+}

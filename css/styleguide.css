@@ -6,24 +6,24 @@
   --bottom: #1dc1f2;
   --bottom-text: #05dbf2;
   --middle: #f2059f;
-  --top: #FFEE00;
-  --top-text: #FFCA80;
-  --roof-color: #0FF231;
+  --top: #ffee00;
+  --top-text: #ffca80;
+  --roof-color: #0ff231;
 
   --navbg: #171718cc;
   --shadow: #00000033;
 
-  --font-size-l: 24px;
-  --font-size-m: 1em;
-  --font-size-s: 0.75em;
-  --font-size-xl: 2.25em;
-  --font-size-xxl: 3.375em;
-  --font-size-xxxl: 5em;
+  --font-size-l: 1.5rem;
+  --font-size-m: 1.1rem;
+  --font-size-s: 0.85rem;
+  --font-size-xl: 2.25rem;
+  --font-size-xxl: 3.375rem;
+  --font-size-xxxl: 5rem;
 
-  --shadow: 6.7px 11.8px 15.3px -2.1px hsl(240deg 6% 3% / 0.34);
+  --shadow: 0.4188rem 0.7375rem 0.9563rem -0.1313rem hsl(240deg 6% 3% / 0.34);
 
-  --font-family: "Consolas", "Fira Code", "Inconsolata", "Monaco",
-    "Lucida Console"
+  --font-family: 'Consolas', 'Fira Code', 'Inconsolata', 'Monaco',
+    'Lucida Console';
 }
 
 p,
@@ -63,14 +63,15 @@ h3 {
 
 h4 {
   font-size: var(--font-size-l);
-  margin: 5px 0px;
+  margin: 0.3125rem 0rem;
   text-shadow: var(--shadow);
+  padding-bottom: 0.5rem;
 }
 
 h6 {
   font-size: var(--font-size-s);
   letter-spacing: 0;
-  margin: 5px 0px;
+  margin: 0.3125rem 0rem;
   text-shadow: var(--shadow);
 }
 
